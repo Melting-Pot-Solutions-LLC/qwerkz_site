@@ -1,0 +1,208 @@
+
+.form-control:focus {
+  border-color: #33c961;
+}
+
+.colorstext {
+  color: #33c961;
+}
+.coloricon i, .faq-details i {
+  color: #33c961;
+}
+.colorsbg {
+  background: #33c961;
+}
+
+.separator {
+  background: #33c961;
+}
+.separator-left {
+  background: #33c961;
+}
+
+.separator_wrap::after,
+.separator_wrap::before {
+  background-color: #33c961;
+}
+.separator_wrap-left::after {
+  background-color: #33c961;
+}
+.separator2 {
+  border: 2px solid #33c961;
+}
+/*
+Button
+*/
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary.disabled,
+.btn-primary.disabled:hover {
+  background-color: #33c961;
+  border-color: #33c961;
+}
+
+.btn-primary.btnxs:hover {
+  background: #33c961;
+}
+
+.btn-default:hover {
+  color: #33c961;
+}
+.btn-primary {
+  background-color: #33c961;
+  border: 2px solid #33c961;
+}
+
+btn-primary:focus {
+  background-color: #33c961;
+}
+.btn-primary:hover {
+  border-color: #33c961;
+  color: #33c961;
+}
+
+h1 span {
+  color: #33c961;
+}
+
+
+.nav .btn-primary:hover {
+  color: #33c961 !important;
+}
+
+.navbar-default .btn-default:hover {
+  border: 1px solid #33c961;
+}
+
+.fixed-nav.navbar .navbar-nav > .active > a,
+.fixed-nav.navbar .navbar-nav > .active > a:hover,
+.fixed-nav.navbar .navbar-nav > .active > a:focus,
+.fixed-nav.navbar .navbar-nav > li > a:hover,
+.fixed-nav.navbar .navbar-nav > li > a:focus {
+  color: #33c961;
+}
+
+.try-registration-form input {
+  border-left: 3px solid #33c961;
+}
+.try-registration-form textarea {
+  border-left: 3px solid #33c961;
+}
+.try-registration-form input:focus {
+  border: 1px solid #33c961;
+  border-left: 3px solid #33c961;
+}
+
+.team-separator {
+  background: #33c961;
+}
+
+.testimonialslide .carousel-indicators .active {
+  background: #33c961 !important;
+  border-color: #33c961 !important;
+}
+
+.rating {
+  color: #33c961;
+}
+
+.pricing-table {
+  border: 2px solid #33c961;
+}
+
+.pricing-table.active {
+  background-color: #33c961;
+  border-color: #33c961;
+}
+
+.timeline .timeline-year {
+  border: 3px solid #33c961;
+  color: #33c961;
+
+}
+.timeline .timeline-year:hover {
+  background: #33c961;
+  -webkit-box-shadow: 0px 0px 0px 2px #33c961;
+  box-shadow: 0px 0px 0px 2px #33c961;
+}
+
+.timeline .start {
+  background: #33c961;
+}
+
+.timeline .timeline-info:hover:after {
+  background: #33c961;
+  border: 2px solid #33c961;
+}
+
+.subscribe-wrap.body-subscribe .subscribe-input {
+  border-color: #33c961;
+}
+
+.newsletter-icon i {
+  font-size: 225px;
+  color: #33c961;
+}
+
+.tweet a:hover {
+  color: #33c961;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #33c961;
+}
+
+.faq-details i {
+  z-index: 1 !important;
+}
+
+#fancy-inputs label.input span:before {
+  background-color: #33c961;
+}
+
+#fancy-inputs input:focus + span span {
+  color: #33c961;
+}
+
+#fancy-inputs label.textarea span:before {
+  background-color: #33c961;
+}
+
+#fancy-inputs textarea:focus + span span {
+  color: #33c961;
+}
+
+.address i {
+  color: #33c961;
+}
+
+.footer-link a:hover {
+  color: #33c961;
+}
+
+.social-link-img a span:hover {
+  color: #33c961;
+}
+
+.social-link a span:hover {
+  color: #33c961;
+}
+
+.footer-link-default a:hover {
+  color: #33c961;
+}
+.form-control:focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #33c961;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #33c961;
+}
+/*# sourceMappingURL=style.css.map */
