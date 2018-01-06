@@ -1,0 +1,208 @@
+
+.form-control:focus {
+  border-color: #1ac6ff;
+}
+
+.colorstext {
+  color: #1ac6ff;
+}
+.coloricon i, .faq-details i {
+  color: #1ac6ff;
+}
+.colorsbg {
+  background: #1ac6ff;
+}
+
+.separator {
+  background: #1ac6ff;
+}
+.separator-left {
+  background: #1ac6ff;
+}
+
+.separator_wrap::after,
+.separator_wrap::before {
+  background-color: #1ac6ff;
+}
+.separator_wrap-left::after {
+  background-color: #1ac6ff;
+}
+.separator2 {
+  border: 2px solid #1ac6ff;
+}
+/*
+Button
+*/
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary.disabled,
+.btn-primary.disabled:hover {
+  background-color: #1ac6ff;
+  border-color: #1ac6ff;
+}
+
+.btn-primary.btnxs:hover {
+  background: #1ac6ff;
+}
+
+.btn-default:hover {
+  color: #1ac6ff;
+}
+.btn-primary {
+  background-color: #1ac6ff;
+  border: 2px solid #1ac6ff;
+}
+
+btn-primary:focus {
+  background-color: #1ac6ff;
+}
+.btn-primary:hover {
+  border-color: #1ac6ff;
+  color: #1ac6ff;
+}
+
+h1 span {
+  color: #1ac6ff;
+}
+
+
+.nav .btn-primary:hover {
+  color: #1ac6ff !important;
+}
+
+.navbar-default .btn-default:hover {
+  border: 1px solid #1ac6ff;
+}
+
+.fixed-nav.navbar .navbar-nav > .active > a,
+.fixed-nav.navbar .navbar-nav > .active > a:hover,
+.fixed-nav.navbar .navbar-nav > .active > a:focus,
+.fixed-nav.navbar .navbar-nav > li > a:hover,
+.fixed-nav.navbar .navbar-nav > li > a:focus {
+  color: #1ac6ff;
+}
+
+.try-registration-form input {
+  border-left: 3px solid #1ac6ff;
+}
+.try-registration-form textarea {
+  border-left: 3px solid #1ac6ff;
+}
+.try-registration-form input:focus {
+  border: 1px solid #1ac6ff;
+  border-left: 3px solid #1ac6ff;
+}
+
+.team-separator {
+  background: #1ac6ff;
+}
+
+.testimonialslide .carousel-indicators .active {
+  background: #1ac6ff !important;
+  border-color: #1ac6ff !important;
+}
+
+.rating {
+  color: #1ac6ff;
+}
+
+.pricing-table {
+  border: 2px solid #1ac6ff;
+}
+
+.pricing-table.active {
+  background-color: #1ac6ff;
+  border-color: #1ac6ff;
+}
+
+.timeline .timeline-year {
+  border: 3px solid #1ac6ff;
+  color: #1ac6ff;
+
+}
+.timeline .timeline-year:hover {
+  background: #1ac6ff;
+  -webkit-box-shadow: 0px 0px 0px 2px #1ac6ff;
+  box-shadow: 0px 0px 0px 2px #1ac6ff;
+}
+
+.timeline .start {
+  background: #1ac6ff;
+}
+
+.timeline .timeline-info:hover:after {
+  background: #1ac6ff;
+  border: 2px solid #1ac6ff;
+}
+
+.subscribe-wrap.body-subscribe .subscribe-input {
+  border-color: #1ac6ff;
+}
+
+.newsletter-icon i {
+  font-size: 225px;
+  color: #1ac6ff;
+}
+
+.tweet a:hover {
+  color: #1ac6ff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #1ac6ff;
+}
+
+.faq-details i {
+  z-index: 1 !important;
+}
+
+#fancy-inputs label.input span:before {
+  background-color: #1ac6ff;
+}
+
+#fancy-inputs input:focus + span span {
+  color: #1ac6ff;
+}
+
+#fancy-inputs label.textarea span:before {
+  background-color: #1ac6ff;
+}
+
+#fancy-inputs textarea:focus + span span {
+  color: #1ac6ff;
+}
+
+.address i {
+  color: #1ac6ff;
+}
+
+.footer-link a:hover {
+  color: #1ac6ff;
+}
+
+.social-link-img a span:hover {
+  color: #1ac6ff;
+}
+
+.social-link a span:hover {
+  color: #1ac6ff;
+}
+
+.footer-link-default a:hover {
+  color: #1ac6ff;
+}
+.form-control:focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #1ac6ff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #1ac6ff;
+}
+/*# sourceMappingURL=style.css.map */
