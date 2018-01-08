@@ -274,6 +274,22 @@ Section
     margin: 0;
     color: grey;
 }
+.its-simple-img. {
+    height: 500px;
+    width: auto;
+}
+.its-simple-text-block {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.its-simple-imgblock2 {
+    display: none;
+}
 .sections {
     padding-top: 100px;
     padding-bottom: 100px;

@@ -61,7 +61,6 @@
     html {
         font-size: 90%;
     }
-
     .home-fluid-left {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -79,12 +78,25 @@
         margin-bottom: 40px;
         margin-top: 4rem;
     }
-
     .fluid-blocks-col {
         padding: 70px 40px 0px 15px;
     }
-
-
+    .its-simple-text-block {
+        height: auto;
+        margin-top: 65px;
+    }
+    .its-simple-text-block>div {
+        margin: 0 auto;
+    }
+    .its-simple-imgblock1 {
+        display: none;
+    }
+    .its-simple-imgblock2 {
+        display: block;
+    }
+    .its-simple-img {
+        height: auto;
+    }
 
 
 
