@@ -27,9 +27,53 @@ $sport    = $_POST['sport'];
 $league    = $_POST['league'];
 $team    = $_POST['team'];
 $twitter    = $_POST['twitter'];
-$interest  = $_POST['interest'];
-$industry  = $_POST['industry'];
+//$interest  = $_POST['interest'];
+//$industry  = $_POST['industry'];
+//$selectIndustry = $_POST['selectIndustry'];
 $msg = $_POST['message'];
+
+if($_POST['selectInterest']=='business')
+{
+     $selectInterest = "Business/entrepreneurship";
+}
+else if($_POST['selectInterest']=='partnerships')
+{
+     $selectInterest = "Partnerships";
+}
+else if($_POST['selectInterest']=='investors')
+{
+     $selectInterest = "Find Investors";
+}
+else if($_POST['selectInterest']=='otherInterest')
+{
+     $selectInterest = "Other";
+}
+
+
+if($_POST['selectIndustry']=='tech')
+{
+     $selectIndustry = "Tech";
+}
+else if($_POST['selectIndustry']=='realEstate')
+{
+     $selectIndustry = "Real Estate";
+}
+else if($_POST['selectIndustry']=='restaurant')
+{
+     $selectIndustry = "Restaurant";
+}
+else if($_POST['selectIndustry']=='nonProfit')
+{
+     $selectIndustry = "Non Profit";
+}
+else if($_POST['selectIndustry']=='ventureCapital')
+{
+     $selectIndustry = "Venture Capital";
+}
+else if($_POST['selectIndustry']=='otherIndustry')
+{
+     $selectIndustry = "Other";
+}
 
 if(trim($name) == '') {
 	echo '<div class="error_message"> <i class="fa fa-close"></i> Please enter your name.</div>';
@@ -68,7 +112,7 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 
 // You can change this if you feel that you need to.
 
-$e_body = "Name: $name \n Email: $email \n Sport: $sport \n League: $league \n Team: $team \n Twitter handle: $twitter \n Interest: $interest \n Industry: $industry \n Message: $msg" . PHP_EOL . PHP_EOL;
+$e_body = "Name: $name \n Email: $email \n Sport: $sport \n League: $league \n Team: $team \n Twitter handle: $twitter \n Interest: $selectInterest \n Industry: $selectIndustry \n Message: $msg" . PHP_EOL . PHP_EOL;
 $e_content = "\"$msg\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email, $email ";
 

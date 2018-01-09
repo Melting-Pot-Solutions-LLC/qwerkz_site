@@ -53,8 +53,10 @@ jQuery(document).ready(function () {
                 league: $('#league').val(),
                 team: $('#team').val(),
                 twitter: $('#twitter').val(),
-                interest: $('#interest').val(),
-                industry: $('#industry').val(),
+//                interest: $('#interest').val(),
+//                industry: $('#industry').val(),
+                selectInterest: $('#selectInterest').val(),
+                selectIndustry: $('#selectIndustry').val(),
                 message: $('#message').val()
             },
             function (data) {
