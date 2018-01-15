@@ -97,9 +97,22 @@
     .its-simple-img {
         height: auto;
     }
-
-
-
+    .athletes-how-it-works.timeline-overview {
+        background: url(../images/olu-eletu-38649.png) no-repeat;
+        /*background-size*/
+        background-size: auto 100%;
+        -webkit-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        background-position: center center !important;
+    }
+    .companies-how-it-works.timeline-overview {
+        background: url(../images/helloquence-61189.jpg) no-repeat;
+        /*background-size*/
+        background-size: auto 100%;
+        -webkit-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        background-position: center center !important;
+    }
 
 }
 /* Landscape phones and portrait tablets */

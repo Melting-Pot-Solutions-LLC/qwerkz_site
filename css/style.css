@@ -247,8 +247,15 @@ Section
     /*background-size*/
     background-size: cover;
 }
-.single-page .timeline-overview {
-    background: url(../images/timeline.jpg) no-repeat center top fixed;
+.athletes-how-it-works.timeline-overview {
+    background: url(../images/olu-eletu-38649.png) no-repeat center top fixed;
+    /*background-size*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+.companies-how-it-works.timeline-overview {
+    background: url(../images/helloquence-61189.jpg) no-repeat center top fixed;
     /*background-size*/
     background-size: cover;
     -webkit-background-size: cover;
@@ -355,7 +362,6 @@ section:nth-of-type(odd) {
     margin: auto;
 }
 .overlay-img {
-    background: rgba(0, 0, 0, 0.3);
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
