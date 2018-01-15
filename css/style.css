@@ -247,6 +247,10 @@ Section
     /*background-size*/
     background-size: cover;
 }
+.nike-image {
+    background-position: center bottom !important;
+    background-size: cover !important;
+}
 .athletes-how-it-works.timeline-overview {
     background: url(../images/olu-eletu-38649.png) no-repeat center top fixed;
     /*background-size*/

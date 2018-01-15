@@ -113,6 +113,11 @@
         -o-background-size: auto 100%;
         background-position: center center !important;
     }
+    .nike-image {
+        background: url(../images/chelsea-ferenando-196955-m.jpg) no-repeat !important;
+        background-position: center bottom !important;
+        background-size: cover !important;
+    }
 
 }
 /* Landscape phones and portrait tablets */
