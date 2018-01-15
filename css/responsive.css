@@ -189,7 +189,21 @@
 
 }
 
-
+@media (max-width: 650px) {
+    .home-page .body-section {
+        background-position: center !important;
+    }
+    .home-button {
+        display: flex;
+        justify-content: space-between;
+    }
+    .home-button .btn {
+        margin-right: 0;
+    }
+    .company-btn {
+        left: 0;
+    }
+}
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
@@ -199,7 +213,13 @@
     .btnxs {
         margin-right: 0;
     }
-
+    .home-page .home-intro .intro-wrap h1 {
+        font-size: 1.75rem;
+    }
+    .home-button .btn {
+        font-size: 15px;
+        padding: 10px 17px;
+    }
     .subscribe-wrap .subscribe-input ,
     .subscribe-wrap button {
         width: 100%;

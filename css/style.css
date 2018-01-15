@@ -238,9 +238,13 @@ Section
     bottom: 50px;
 }
 .home-page .home-default-btn {
-    background: url(../images/home-button.jpg) no-repeat center top fixed;
+    background: url(../images/home-bg-1.jpg) no-repeat center top fixed;
     /*background-size*/
     background-size: cover;
+}
+.company-btn {
+    position: relative;
+    left: 46px;
 }
 .single-page .home-default-btn {
     background: url(../images/home-button.jpg) no-repeat center top fixed;
