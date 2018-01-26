@@ -12,11 +12,16 @@ jQuery(document).ready(function () {
 
 
 
-    $('.contact-form-athletes').submit(function () {
+    $('#sendAT').click(function () {
         
-//        emailjs.send("gmail","admin_template",{name: $('#name').val(), email: $('#email').val(), sport: $('#sport').val(), league: $('#league').val(), team: $('#team').val(), twitter: $('#twitter').val(), selectInterest: $('#selectInterest').val(), selectIndustry: $('#selectIndustry').val(), message: $('#message').val()});
+       emailjs.send("gmail","admin_template",{name: $('#nameAT').val(), email: "steve rubin", sport: $('#sportAT').val(), league: $('#leagueAT').val(), team: $('#teamAT').val(), twitter: $('#twitterAT').val(), selectInterest: $('#selectInterestAT').val(), selectIndustry: $('#selectIndustryAT').val(), message: $('#messageAT').val()}).then(function(response) {
+        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+     }, function(err) {
+        console.log("FAILED. error=", err);
+     });;
         
-        emailjs.send("gmail", "athlete_template", {email: $('#email').val()})
+    //    setTimeout(emailjs.send("gmail", "athlete_template", {email: $('#email').val()}), 3000);
+        
 
         var action = $(this).attr('action');
 

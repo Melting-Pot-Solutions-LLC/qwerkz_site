@@ -7,7 +7,8 @@ if(!$_POST) exit;
 /*------------------------------------
  * just replace email address with your email address
  ---------------------------------------------*/
-$address = "Support@qwerkz.com"; 
+//$address = "Support@qwerkz.com"; 
+$address = "steve@steverubin.net"; 
 
 
 

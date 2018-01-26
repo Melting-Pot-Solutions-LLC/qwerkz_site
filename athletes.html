@@ -31,6 +31,13 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <style type="text/css"></style>
 
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_4xY8yXnZyyKk1fiRCwuuA");
+       })();
+    </script>
+
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar">
@@ -219,13 +226,14 @@
 
                         <div class="text-center error-message" id="error-message-athletes"></div>
 
-                        <form method="post" action="scripts/contactAthletes.php" class="contact-form contact-form-athletes">
+                        <!-- <form method="post" action="./scripts/contactAthletes.php" class="contact-form contact-form-athletes"> -->
+                        <form method="post"  class="contact-form contact-form-athletes">
                             <div id="fancy-inputs">
                                 <div class="row">
 
                                     <div class="col-sm-12 col-md-6">
                                         <label class="input">
-                                            <input type="text" name="name" id="name" class="name">
+                                            <input type="text" name="name" id="nameAT" class="name">
                                             <span style=""><span style="">Name</span></span>
                                         </label>
 
@@ -233,35 +241,35 @@
 
                                     <div class="col-sm-12 col-md-6">
                                         <label class="input">
-                                            <input type="text" name="email" id="email">
+                                            <input type="text" name="email" id="emailAT">
                                             <span style=""><span>Email</span></span>
                                         </label>
                                     </div>
 
                                     <div class="col-sm-12 col-md-6">
                                         <label class="input">
-                                            <input type="text" name="sport" id="sport">
+                                            <input type="text" name="sport" id="sportAT">
                                             <span style=""><span>Sport</span></span>
                                         </label>
                                     </div>
 
                                     <div class="col-sm-12 col-md-6">
                                         <label class="input">
-                                            <input type="text" name="league" id="league">
+                                            <input type="text" name="league" id="leagueAT">
                                             <span style=""><span>League</span></span>
                                         </label>
                                     </div>
 
                                     <div class="col-sm-12 col-md-6">
                                         <label class="input">
-                                            <input type="text" name="team" id="team">
+                                            <input type="text" name="team" id="teamAT">
                                             <span style=""><span>Team</span></span>
                                         </label>
                                     </div>
 
                                     <div class="col-sm-12 col-md-6">
                                         <label class="input">
-                                            <input type="text" name="twitter" id="twitter">
+                                            <input type="text" name="twitter" id="twitterAT">
                                             <span style=""><span>Twitter handle</span></span>
                                         </label>
                                     </div>
@@ -285,7 +293,7 @@
 
                                    <div class="col-sm-12 col-md-6 form-select">
                                         <label class="input">Interest:</label>
-                                        <select name="selectInterest" id="selectInterest"> 
+                                        <select name="selectInterest" id="selectInterestAT"> 
                                             <option value="business">Business/entrepreneurship</option> 
                                             <option value="partnerships">Partnerships </option>
                                             <option value="investors">Find Investors </option>
@@ -295,7 +303,7 @@
                                     
                                     <div class="col-sm-12 col-md-6 form-select">
                                         <label class="input">Industry:</label>
-                                        <select name="selectIndustry" id="selectIndustry"> 
+                                        <select name="selectIndustry" id="selectIndustryAT"> 
                                             <option value="tech">Tech</option> 
                                             <option value="realEstate">Real Estate </option>
                                             <option value="restaurant">Restaurant </option>
@@ -307,14 +315,14 @@
 
                                     <div class="col-sm-12">
                                         <label class="textarea">
-                                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                            <textarea name="messageAY" id="message" cols="30" rows="10"></textarea>
                                             <span style=""><span style="">Your message</span></span>
                                         </label>
                                     </div>
 
                                 </div>
                                 <div class="submit-button">
-                                    <button class="btn btn-primary btnxs btn-lg submit" type="submit" name="submit" data-loading-text="Loading..."><i class="icon icon-rocket"></i> Send Message</button>
+                                    <button class="btn btn-primary btnxs btn-lg submit" type="" name="" id="sendAT" data-loading-text="Loading..."><i class="icon icon-rocket"></i> Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -337,12 +345,7 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/twitterFetcher_min.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_4xY8yXnZyyKk1fiRCwuuA");
-       })();
-    </script>
+    
     <script src="js/jquery-contact.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/plugins.js"></script>
