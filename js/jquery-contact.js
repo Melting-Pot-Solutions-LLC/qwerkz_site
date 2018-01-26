@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
 
     $('#sendAT').click(function () {
         
-       emailjs.send("gmail","admin_template",{name: $('#nameAT').val(), email: "steve rubin", sport: $('#sportAT').val(), league: $('#leagueAT').val(), team: $('#teamAT').val(), twitter: $('#twitterAT').val(), selectInterest: $('#selectInterestAT').val(), selectIndustry: $('#selectIndustryAT').val(), message: $('#messageAT').val()}).then(function(response) {
+       emailjs.send("gmail","admin_template",{name: $('#nameAT').val(), email: $('#emailAT').val(), sport: $('#sportAT').val(), league: $('#leagueAT').val(), team: $('#teamAT').val(), twitter: $('#twitterAT').val(), selectInterest: $('#selectInterestAT').val(), selectIndustry: $('#selectIndustryAT').val(), message: $('#messageAT').val()}).then(function(response) {
         console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
      }, function(err) {
         console.log("FAILED. error=", err);
