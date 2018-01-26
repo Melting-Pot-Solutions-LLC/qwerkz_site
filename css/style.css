@@ -238,7 +238,7 @@ Section
     bottom: 50px;
 }
 .home-page .home-default-btn {
-    background: url(../images/home-bg-1.jpg) no-repeat center top fixed;
+    background: url(../images/home-button.jpg) no-repeat center top fixed;
     /*background-size*/
     background-size: cover;
 }
@@ -778,7 +778,7 @@ Style 2
     color: #ffffff;
     font-size: 3.75rem;
     line-height: 4.5rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.8rem;
     text-transform: none;
     font-weight: 600;
 }

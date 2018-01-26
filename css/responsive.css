@@ -193,10 +193,6 @@
     .home-page .body-section {
         background-position: center !important;
     }
-    .home-button {
-        display: flex;
-        justify-content: space-between;
-    }
     .home-button .btn {
         margin-right: 0;
     }
