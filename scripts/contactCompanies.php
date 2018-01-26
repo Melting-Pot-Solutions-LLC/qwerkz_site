@@ -7,7 +7,7 @@ if(!$_POST) exit;
 /*------------------------------------
  * just replace email address with your email address
  ---------------------------------------------*/
-$address = "corey@qwerkz.com"; 
+$address = "Support@qwerkz.com"; 
 
 
 
@@ -38,7 +38,10 @@ if(trim($nameOfCompany) == '') {
 } else if(trim($phoneCompany) == '') {
 	echo '<div class="error_message"><i class="fa fa-close"></i>  Please enter a valid phone number.</div>';
 	exit();
-} 
+} else if(trim($contactPersonEmail) == '') {
+	echo '<div class="error_message"><i class="fa fa-close"></i>  Please enter a valid email.</div>';
+	exit();
+}
 
 
 
@@ -66,17 +69,19 @@ $e_subject = 'You\'ve been contacted by ' . $nameOfCompany . '.';
 
 // You can change this if you feel that you need to.
 
-$e_body = "Name of Company/Brand: $nameOfCompany \n Contact person name: $contactPerson \n Contact person email and Job title: $contactPersonEmail \n Industry: $industryCompany \n Annual Revenue: $revenue \n Product/Service: $product \n Address: $companyAddress \n Phone Number: $phoneCompany \n Website: $website \n Message: $msg" . PHP_EOL . PHP_EOL;
-$e_content = "\"$msg\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $nameOfCompany via phone number, $phoneCompany ";
+$e_body = '<html><body style=\"text-align: center; font-size:14px; color:#000;\>';
+$e_body .= '<h1>Hello there</h1>';
+$e_body .= '<h2>This company wants to get in touch with you:</h2>';
+$e_body .= "<p>Name of Company/Brand: <strong>".$nameOfCompany."</strong><br><br>Contact person name: <strong>".$contactPerson."</strong><br><br>Contact person email: <strong>".$contactPersonEmail."</strong><br><br>Industry: <strong>".$industryCompany."</strong><br><br>Annual Revenue: <strong>".$revenue."</strong><br><br>Product/Service: <strong>".$product."</strong><br><br>Address: <strong>".$companyAddress."</strong><br><br>Phone Number: <strong>".$phoneCompany."</strong><br><br>Website: <strong>".$website."</strong><br><br>Message: <strong>".$msg."</strong></p>";
+$e_body .= "</body></html>";
 
-$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+$msg = wordwrap( $e_body, 70 );
 
-$headers = "From: $nameOfCompany" . PHP_EOL;
-$headers .= "Reply-To: $contactPersonEmail" . PHP_EOL;
-$headers .= "MIME-Version: 1.0" . PHP_EOL;
-$headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
-$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+$headers = "From: $contactPersonEmail". "\r\n";
+$headers .= "Reply-To: $contactPersonEmail". "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+$headers .= "Content-Transfer-Encoding: quoted-printable";
 
 if(mail($address, $e_subject, $msg, $headers)) {
 

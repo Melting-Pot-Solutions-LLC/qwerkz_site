@@ -7,7 +7,7 @@ if(!$_POST) exit;
 /*------------------------------------
  * just replace email address with your email address
  ---------------------------------------------*/
-$address = "corey@qwerkz.com"; 
+$address = "Support@qwerkz.com"; 
 
 
 
@@ -112,17 +112,19 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 
 // You can change this if you feel that you need to.
 
-$e_body = "Name: $name \n Email: $email \n Sport: $sport \n League: $league \n Team: $team \n Twitter handle: $twitter \n Interest: $selectInterest \n Industry: $selectIndustry \n Message: $msg" . PHP_EOL . PHP_EOL;
-$e_content = "\"$msg\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email ";
+$e_body = '<html><body style=\"text-align: center; font-size:14px; color:#000;\>';
+$e_body .= '<h1>Hello there</h1>';
+$e_body .= '<h2>This athelete wants to get in touch with you:</h2>';
+$e_body .= "<p>Name: <strong>".$name."</strong><br><br>Email: <strong>".$email."</strong><br><br>Sport: <strong>".$sport."</strong><br><br>League: <strong>".$league."</strong><br><br>Team: <strong>".$team."</strong><br><br>Twitter handle: <strong>".$twitter."</strong><br><br>Interest: <strong>".$selectInterest."</strong><br><br>Industry: <strong>".$selectIndustry."</strong><br><br>Message: <strong>".$msg."</strong></p>";
+$e_body .= "</body></html>";
 
-$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+$msg = wordwrap( $e_body, 70 );
 
-$headers = "From: $email" . PHP_EOL;
-$headers .= "Reply-To: $email" . PHP_EOL;
-$headers .= "MIME-Version: 1.0" . PHP_EOL;
-$headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
-$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+$headers = "From: $email". "\r\n";
+$headers .= "Reply-To: $email". "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+$headers .= "Content-Transfer-Encoding: quoted-printable";
 
 if(mail($address, $e_subject, $msg, $headers)) {
 

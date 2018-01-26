@@ -11,36 +11,12 @@ jQuery(document).ready(function () {
             });
 
 
-//    $('#contactform').submit(function () {
-//
-//        var action = $(this).attr('action');
-//
-//        $(".error-message").slideUp(750, function () {
-//            $('.error-message').hide();
-//            $.post(action, {
-//                name: $('#name').val(),
-//                email: $('#email').val(),
-//                subject: $('#subject').val(),
-//                message: $('#message').val()
-//            },
-//            function (data) {
-//                document.getElementById('error-message').innerHTML = data;
-//                $('.error-message').slideDown('slow');
-//                $('.submit').removeAttr('disabled');
-//                if (data.match('success') != null)
-//                    $('#contactform').slideUp('slow');
-//
-//            }
-//            );
-//
-//        });
-//
-//        return false;
-//
-//    });
-    
-    
+
     $('.contact-form-athletes').submit(function () {
+        
+//        emailjs.send("gmail","admin_template",{name: $('#name').val(), email: $('#email').val(), sport: $('#sport').val(), league: $('#league').val(), team: $('#team').val(), twitter: $('#twitter').val(), selectInterest: $('#selectInterest').val(), selectIndustry: $('#selectIndustry').val(), message: $('#message').val()});
+        
+        emailjs.send("gmail", "athlete_template", {email: $('#email').val()})
 
         var action = $(this).attr('action');
 
@@ -53,8 +29,6 @@ jQuery(document).ready(function () {
                 league: $('#league').val(),
                 team: $('#team').val(),
                 twitter: $('#twitter').val(),
-//                interest: $('#interest').val(),
-//                industry: $('#industry').val(),
                 selectInterest: $('#selectInterest').val(),
                 selectIndustry: $('#selectIndustry').val(),
                 message: $('#message').val()
@@ -70,12 +44,14 @@ jQuery(document).ready(function () {
             );
 
         });
-
-        return false;
+        
+      return false;
 
     });
     
     $('.contact-form-companies').submit(function () {
+        
+        emailjs.send("gmail", "company_template",  {email: $('#contactPersonEmail').val()});
 
         var action = $(this).attr('action');
 
