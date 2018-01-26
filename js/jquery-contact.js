@@ -25,6 +25,9 @@ jQuery(document).ready(function () {
         }, function(err) {
             console.log("FAILED. error=", err);
         });
+
+        $("#formAT").fadeOut(duration=1500);
+        alert("Your email has been successfully sent! Thanks!");
         
 
         var action = $(this).attr('action');
@@ -69,6 +72,9 @@ jQuery(document).ready(function () {
         emailjs.send("gmail", "company_template",  {email: $('#contactPersonEmail').val()});
 
         var action = $(this).attr('action');
+
+        $("#formCO").fadeOut(duration=1500);
+        alert("Your email has been successfully sent! Thanks!");
 
         $(".error-message").slideUp(750, function () {
             $('.error-message').hide();
