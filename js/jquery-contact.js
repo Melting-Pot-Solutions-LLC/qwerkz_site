@@ -20,7 +20,11 @@ jQuery(document).ready(function () {
         console.log("FAILED. error=", err);
      });;
         
-    //    setTimeout(emailjs.send("gmail", "athlete_template", {email: $('#email').val()}), 3000);
+        emailjs.send("gmail", "athlete_template", {email: $('#emailAT').val()}).then(function(response) {
+            console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+        }, function(err) {
+            console.log("FAILED. error=", err);
+        });
         
 
         var action = $(this).attr('action');
@@ -56,6 +60,12 @@ jQuery(document).ready(function () {
     
     $('.contact-form-companies').submit(function () {
         
+        emailjs.send("gmail","admin_template",{name: $('#nameOfCompany').val(), email: $('#contactPersonEmail').val(), sport: $('#sport').val(), league: $('#league').val(), team: $('#team').val(), twitter: $('#twitter').val(), selectInterest: $('#selectInterest').val(), selectIndustry: $('#selectIndustry').val(), message: $('#messageCompany').val()}).then(function(response) {
+            console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+         }, function(err) {
+            console.log("FAILED. error=", err);
+         });;
+
         emailjs.send("gmail", "company_template",  {email: $('#contactPersonEmail').val()});
 
         var action = $(this).attr('action');
