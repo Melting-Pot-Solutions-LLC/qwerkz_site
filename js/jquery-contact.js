@@ -73,7 +73,7 @@ jQuery(document).ready(function () {
 
         var action = $(this).attr('action');
 
-        $("#formCO").fadeOut(duration=1500);
+        $("#contact").fadeOut(duration=1500);
         alert("Your email has been successfully sent! Thanks!");
 
         $(".error-message").slideUp(750, function () {
