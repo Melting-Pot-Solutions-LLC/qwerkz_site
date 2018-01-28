@@ -118,6 +118,11 @@
         background-position: center bottom !important;
         background-size: cover !important;
     }
+    .single-page-athletes>.home-wrap {
+        background: url(../images/pexels-photo-447570-m.jpg) no-repeat !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
 
 }
 /* Landscape phones and portrait tablets */
