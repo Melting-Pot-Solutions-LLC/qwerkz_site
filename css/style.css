@@ -1829,35 +1829,24 @@ TWITTER FEED
 .address-details {
     margin-top: 1.5rem;
 }
-.footer-img {
-    background: url(../images/footer.jpg) no-repeat center top fixed;
-    /*background-size*/
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    overflow: hidden;
+footer {
+    padding: 20px 0;
+    box-shadow: 0 2px 5px #ddd;
+    background-color: #364b5c;
 }
-.footer-img .overlay-img {
-    padding: 60px 0;
-    background: rgba(0, 0, 0, 0.5);
+footer ul {
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: right;
 }
-.footer-wrap img {
-    margin-bottom: 40px;
+footer ul li {
+    display: inline-block;
 }
-.footer-wrap span {
-    text-transform: uppercase;
-    font-size: 13px;
-}
-.footer-bottom {
-    margin-top: 3.5rem;
-    font-size: 16px;
-}
-.footer-link a {
+footer a {
     color: #fff;
 }
-.footer-link a:hover {
-    color: #f56363;
+footer a:hover {
+    color: #fff;
 }
 .social-link a {
     font-size: 26px;
